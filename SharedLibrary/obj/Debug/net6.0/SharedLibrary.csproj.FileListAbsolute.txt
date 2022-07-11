@@ -1,0 +1,12 @@
+C:\Users\bayra\Desktop\Bootcamp_Proje\SharedLibrary\bin\Debug\net6.0\SharedLibrary.deps.json
+C:\Users\bayra\Desktop\Bootcamp_Proje\SharedLibrary\bin\Debug\net6.0\SharedLibrary.dll
+C:\Users\bayra\Desktop\Bootcamp_Proje\SharedLibrary\bin\Debug\net6.0\SharedLibrary.pdb
+C:\Users\bayra\Desktop\Bootcamp_Proje\SharedLibrary\obj\Debug\net6.0\SharedLibrary.csproj.AssemblyReference.cache
+C:\Users\bayra\Desktop\Bootcamp_Proje\SharedLibrary\obj\Debug\net6.0\SharedLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bayra\Desktop\Bootcamp_Proje\SharedLibrary\obj\Debug\net6.0\SharedLibrary.AssemblyInfoInputs.cache
+C:\Users\bayra\Desktop\Bootcamp_Proje\SharedLibrary\obj\Debug\net6.0\SharedLibrary.AssemblyInfo.cs
+C:\Users\bayra\Desktop\Bootcamp_Proje\SharedLibrary\obj\Debug\net6.0\SharedLibrary.csproj.CoreCompileInputs.cache
+C:\Users\bayra\Desktop\Bootcamp_Proje\SharedLibrary\obj\Debug\net6.0\SharedLibrary.dll
+C:\Users\bayra\Desktop\Bootcamp_Proje\SharedLibrary\obj\Debug\net6.0\refint\SharedLibrary.dll
+C:\Users\bayra\Desktop\Bootcamp_Proje\SharedLibrary\obj\Debug\net6.0\SharedLibrary.pdb
+C:\Users\bayra\Desktop\Bootcamp_Proje\SharedLibrary\obj\Debug\net6.0\ref\SharedLibrary.dll
