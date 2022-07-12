@@ -13,11 +13,11 @@ namespace Guide_Project.Service.Services;
 public class UserService : IUserService
 {
     private readonly UserManager<UserEntity> _userManager;
-    private readonly RoleManager<IdentityRole> _roleManager;
+    private readonly RoleManager<RoleEntity> _roleManager;
     private readonly IUnitOfWork _unitOfWork;
 
     public IConfiguration Configuration { get; set; }
-    public UserService(UserManager<UserEntity> userManager, RoleManager<IdentityRole> roleManager,
+    public UserService(UserManager<UserEntity> userManager, RoleManager<RoleEntity> roleManager,
         IConfiguration configuration, IUnitOfWork unitOfWork)
     {
         _userManager = userManager;

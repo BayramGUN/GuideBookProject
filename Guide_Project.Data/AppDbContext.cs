@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Guide_Project.Data;
 
-public class AppDbContext : IdentityDbContext<UserEntity, IdentityRole, string>
+public class AppDbContext : IdentityDbContext<UserEntity, RoleEntity, int>
 {
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
     {
@@ -16,7 +16,9 @@ public class AppDbContext : IdentityDbContext<UserEntity, IdentityRole, string>
     //public DbSet<RefreshToken> RefreshTokens { get; set; }
     /* protected override void OnModelCreating(ModelBuilder builder)
     {
-        builder.ApplyConfigurationsFromAssembly(GetType().Assembly);
-        base.OnModelCreating(builder);
-    }  */
-} 
+        builder.Entity<CommercialActivity>()
+                .HasOne(x => x.Customer)
+                .WithMany(x => x.CommercialActivities)
+                .HasForeignKey(x => x.CustomerId);
+    } */
+}

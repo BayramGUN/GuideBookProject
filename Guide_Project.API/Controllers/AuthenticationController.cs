@@ -5,13 +5,13 @@ using Microsoft.AspNetCore.Http;
 
 namespace Guide_Project.API.Controllers;
 
-[Route("api/[controller]/[action]")]
+[Route("api/[controller]s/[action]")]
 [ApiController]
-public class AuthenticaionController : CustomController
+public class AuthenticationController : CustomController
 {
     private readonly IAuthService _authService;
 
-    public AuthenticaionController(IAuthService authService)
+    public AuthenticationController(IAuthService authService)
     {
         _authService = authService;
     }

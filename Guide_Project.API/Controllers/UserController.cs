@@ -5,7 +5,7 @@ using Guide_Project.Core.DTOs;
 
 namespace Guide_Project.API.Controllers;
 
-[Route("api/[controller]/[action]")]
+[Route("api/[controller]s/[action]")]
 [ApiController]
 public class UserController : CustomController
 {

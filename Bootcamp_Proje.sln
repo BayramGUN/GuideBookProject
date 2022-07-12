@@ -1,25 +1,27 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guide_Project.API", "Guide_Project.API\Guide_Project.API.csproj", "{503F3D47-AD32-4A8C-A996-D59EF20C0FB6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Guide_Project.API", "Guide_Project.API\Guide_Project.API.csproj", "{503F3D47-AD32-4A8C-A996-D59EF20C0FB6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guide_Project.Data", "Guide_Project.Data\Guide_Project.Data.csproj", "{CB6C9A7D-6448-4EB6-939C-19571A55F087}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Guide_Project.Data", "Guide_Project.Data\Guide_Project.Data.csproj", "{CB6C9A7D-6448-4EB6-939C-19571A55F087}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guide_Project.Service", "Guide_Project.Service\Guide_Project.Service.csproj", "{041B46B6-879A-4A20-8752-52D5A270136B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Guide_Project.Service", "Guide_Project.Service\Guide_Project.Service.csproj", "{041B46B6-879A-4A20-8752-52D5A270136B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedLibrary", "SharedLibrary\SharedLibrary.csproj", "{D04D4156-4D53-4944-A2BC-13A240C4EC0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharedLibrary", "SharedLibrary\SharedLibrary.csproj", "{D04D4156-4D53-4944-A2BC-13A240C4EC0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guide_Project.Core", "Guide_Project.Core\Guide_Project.Core.csproj", "{7CCF9929-3842-487C-9E19-E54273EC19C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Guide_Project.Core", "Guide_Project.Core\Guide_Project.Core.csproj", "{7CCF9929-3842-487C-9E19-E54273EC19C1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2ED9E738-B35D-4962-A49C-CA7B47FA998E}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{503F3D47-AD32-4A8C-A996-D59EF20C0FB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -42,5 +44,11 @@ Global
 		{7CCF9929-3842-487C-9E19-E54273EC19C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CCF9929-3842-487C-9E19-E54273EC19C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CCF9929-3842-487C-9E19-E54273EC19C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {74B5DC26-8F25-4899-B08D-830BAF86280C}
 	EndGlobalSection
 EndGlobal

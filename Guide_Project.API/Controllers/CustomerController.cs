@@ -1,0 +1,51 @@
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
+using Guide_Project.Core.Services;
+using Guide_Project.Core.DTOs;
+using Guide_Project.Core.Models;
+using Microsoft.AspNetCore.Authorization;
+
+namespace Guide_Project.API.Controllers;
+
+[Route("api/[controller]s/[action]")]
+[ApiController]
+[Authorize]
+public class CustomerController : CustomController
+{
+    private readonly IGenericService<Customer, CustomerDto> _customerService;
+
+    public CustomerController(IGenericService<Customer, CustomerDto> customerService)
+    {
+        _customerService = customerService;
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> GetCustumers()
+    {
+        return ActionResultInstance(await _customerService.GetAllAsync());
+    }
+    [HttpPost]
+    public async Task<IActionResult> CreateCustomer(CustomerDto customerDto)
+    {
+        return ActionResultInstance(await _customerService.AddAsync(customerDto));
+    }
+    [HttpPut]
+    public async Task<IActionResult> UpdateCustomer(CustomerDto customerDto)
+    {
+        return ActionResultInstance(await _customerService.Update(customerDto, customerDto.Id));
+    }
+
+    [Authorize(Policy = "RequireAdministratorRole")]
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteCustomer(int id)
+    {
+        return ActionResultInstance(await _customerService.RemoveById(id));
+    }
+
+    [Authorize(Policy = "RequireAdministratorRole")]
+    [HttpDelete]
+    public async Task<IActionResult> DeleteAllCustomers()
+    {
+        return ActionResultInstance(await _customerService.RemoveAll());
+    }
+}

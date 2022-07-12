@@ -4,23 +4,28 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Guide_Project.Data.Repositories;
 
-public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : class
+public class GenericRepository<TEntity> : IGenericRepository<TEntity> 
+    where TEntity : class
 {
-    private readonly DbContext _context; 
-    private readonly DbSet<TEntity> _dbSet;
+    private readonly AppDbContext _context; 
+    //private readonly DbSet<TEntity> _context.Set<TEntity>();
 
-    public GenericRepository(DbContext context, DbSet<TEntity> dbSet)
+    public GenericRepository(AppDbContext context)
     {
         _context = context;
-        _dbSet = context.Set<TEntity>();
     }
+
     public async Task AddAsync(TEntity entity)
     {
-        await _dbSet.AddAsync(entity);
+        await _context.Set<TEntity>().AddAsync(entity);
+    }
+    public async Task<IEnumerable<TEntity>> GetAllAsync()
+    {
+        return await _context.Set<TEntity>().ToListAsync();
     }
     public async Task<TEntity> GetByIdAsync(int id)
     {
-        var entity = await _dbSet.FindAsync(id);
+        var entity = await _context.Set<TEntity>().FindAsync(id);
         if (entity is null)
             throw new ArgumentNullException("Argument is null");
         
@@ -29,7 +34,11 @@ public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEnt
     
     public void Remove(TEntity entity)
     {
-        _dbSet.Remove(entity);
+        _context.Set<TEntity>().Remove(entity);
+    }
+    public void RemoveAll()
+    {
+        _context.Set<TEntity>().ToList().ForEach(ctx => _context.Set<TEntity>().Remove(ctx));
     }
     public TEntity Update(TEntity entity)
     {

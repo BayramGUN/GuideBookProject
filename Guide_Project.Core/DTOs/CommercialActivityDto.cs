@@ -1,12 +1,13 @@
+using System.Text.Json.Serialization;
 using Guide_Project.Core.Models;
 
 namespace Guide_Project.Core.Models;
 
 public class CommercialActivityDto
 {
-    public string Id { get; set; } = string.Empty;
+    public int Id { get; set; }
     public decimal Price { get; set; }
-    public int CustomerId { get; set; } 
-    public Customer Customer { get; set; } = new Customer();
+    [JsonIgnore]
+    public int CustomerId { get; set; }
     public string Employment { get; set; } = string.Empty;
 }

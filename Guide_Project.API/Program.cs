@@ -30,7 +30,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
         action.MigrationsAssembly("Guide_Project.Data");
     });
 });
-builder.Services.AddIdentity<UserEntity, IdentityRole>().AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
+builder.Services.AddIdentity<UserEntity, RoleEntity>().AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
 
 
 builder.Services.AddAuthentication().AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, bearerOptions =>
@@ -47,6 +47,18 @@ builder.Services.AddAuthentication().AddJwtBearer(JwtBearerDefaults.Authenticati
             ClockSkew = TimeSpan.Zero
         };
   });
+
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("RequireAdmistratorRole", policy =>
+    {
+        policy.RequireRole("admin");
+    });
+    options.AddPolicy("RequireEditorRole", policy =>
+    {
+        policy.RequireRole("editor");
+    });
+});
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

@@ -9,5 +9,10 @@ public class DtoMapper : Profile
     public DtoMapper()
     {
         CreateMap<UserDto, UserEntity>().ReverseMap();
+        CreateMap<CustomerDto, Customer>().ReverseMap();
+        CreateMap<CommercialActivityDto, CommercialActivity>().ForMember(
+                                            dest => dest.CustomerId, 
+                                            opt => opt.Ignore()
+                                        );
     }
 }

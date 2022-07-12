@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Guide_Project.API.Controllers;
 
-[Route("api/[controller]")]
+[Route("api/[controller]s")]
 [ApiController]
 public class CustomController : Controller
 {
@@ -13,8 +13,4 @@ public class CustomController : Controller
     {
         return new ObjectResult(response) { StatusCode = response.Status };
     }
-    /* private IActionResult ActionResultInstance2(Response<TokenDto> result)
-    {
-        return new ObjectResult(result) { StatusCode = result.Status };
-    } */
 }
