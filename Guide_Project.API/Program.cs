@@ -1,15 +1,20 @@
+using System.Security.Authentication;
 using System.Text;
 using Guide_Project.Core.Models;
+using Guide_Project.Core.Publishers;
 using Guide_Project.Core.Repositories;
 using Guide_Project.Core.Services;
 using Guide_Project.Core.UnitOfWork;
 using Guide_Project.Data;
 using Guide_Project.Data.Repositories;
+using Guide_Project.Service.Publishers;
 using Guide_Project.Service.Services;
+using MassTransit;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using RabbitMQ.Client;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -54,11 +59,22 @@ builder.Services.AddAuthorization(options =>
     {
         policy.RequireRole("admin");
     });
+    
     options.AddPolicy("RequireEditorRole", policy =>
     {
         policy.RequireRole("editor");
     });
 });
+
+builder.Services.AddSingleton(sp => new ConnectionFactory() 
+{ 
+    Uri = new Uri(builder.Configuration.GetConnectionString("RabbitMQCon"))
+});
+builder.Services.AddSingleton<IRabbitMQService, WaterMarkMqService>();
+builder.Services.AddSingleton(typeof(IRabbitMQPublisher<>) ,typeof(WaterMarkMqPublisher<>));
+    
+            
+            
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

@@ -35,14 +35,14 @@ public class UserService : IUserService
         }; 
         
         var result = await _userManager.CreateAsync(user, signupDto.Password); 
-        await _userManager.AddToRoleAsync(user, "editor"); 
+        await _roleManager.CreateAsync(new() { Name = "editor" });
         if(!result.Succeeded)
         {
             var errors = result.Errors.Select(ctx => ctx.Description).ToList();
 
             return Response<UserDto>.Fail(new ErrorDto(errors, true), 400);
         }
-        await _roleManager.CreateAsync(new() { Name = "editor" });
+        await _userManager.AddToRoleAsync(user, "editor"); 
         return Response<UserDto>.SuccessWithData(ObjectMapper.Mapper.Map<UserDto>(user), 200);
     }
     public async Task<Response<UserDto>> DefaultAdminAccaunt()
@@ -59,14 +59,14 @@ public class UserService : IUserService
             Password = Configuration["Admin:SecretPassword"],
         };
         var result = await _userManager.CreateAsync(admin, adminSignup.Password); 
-        await _userManager.AddToRoleAsync(admin, "admin"); 
+        await _roleManager.CreateAsync(new() { Name = "admin" });
         if(!result.Succeeded)
         {
             var errors = result.Errors.Select(ctx => ctx.Description).ToList();
 
             return Response<UserDto>.Fail(new ErrorDto(errors, true), 400);
         }
-        await _roleManager.CreateAsync(new() { Name = "admin" });
+        await _userManager.AddToRoleAsync(admin, "admin"); 
         await _unitOfWork.CommitAsync();
 
         return Response<UserDto>.SuccessWithData(ObjectMapper.Mapper.Map<UserDto>(admin), 200);

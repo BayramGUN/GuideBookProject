@@ -7,7 +7,6 @@ public class CommercialActivityDto
 {
     public int Id { get; set; }
     public decimal Price { get; set; }
-    [JsonIgnore]
     public int CustomerId { get; set; }
     public string Employment { get; set; } = string.Empty;
 }

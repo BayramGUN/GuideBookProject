@@ -22,7 +22,6 @@ public class AuthenticationController : CustomController
         return ActionResultInstance(await _authService.CreateAccessTokenAsync(loginDto));
     }
 
-    
 }
 
  

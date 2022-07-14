@@ -10,5 +10,8 @@ public class CustomerDto
     public string SurName { get; set; } = string.Empty;
     public string Email { get; set; } = string.Empty;
     public string Phone { get; set; } = string.Empty;
+    public string Image { get; set; } = string.Empty;
     public string City { get; set; } = string.Empty;
+    public CommercialActivity CommercialActivity { get; set; } = new CommercialActivity();
+
 }

@@ -4,19 +4,22 @@ using Guide_Project.Core.Services;
 using Guide_Project.Core.DTOs;
 using Guide_Project.Core.Models;
 using Microsoft.AspNetCore.Authorization;
+using Guide_Project.Service.Publishers;
 
 namespace Guide_Project.API.Controllers;
 
+[Authorize]
 [Route("api/[controller]s/[action]")]
 [ApiController]
-[Authorize]
 public class CustomerController : CustomController
 {
     private readonly IGenericService<Customer, CustomerDto> _customerService;
-
-    public CustomerController(IGenericService<Customer, CustomerDto> customerService)
+    private readonly WaterMarkMqPublisher<CustomerDto> _watermarker;
+    public CustomerController(IGenericService<Customer, CustomerDto> customerService,
+        WaterMarkMqPublisher<CustomerDto> watermarker)
     {
         _customerService = customerService;
+        _watermarker = watermarker;
     }
 
     [HttpGet]
@@ -27,6 +30,7 @@ public class CustomerController : CustomController
     [HttpPost]
     public async Task<IActionResult> CreateCustomer(CustomerDto customerDto)
     {
+        _watermarker.Publish(customerDto);
         return ActionResultInstance(await _customerService.AddAsync(customerDto));
     }
     [HttpPut]

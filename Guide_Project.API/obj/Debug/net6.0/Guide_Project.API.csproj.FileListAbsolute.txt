@@ -59,3 +59,8 @@ C:\Users\bayra\Desktop\Bootcamp_Proje\Guide_Project.API\bin\Debug\net6.0\Microso
 C:\Users\bayra\Desktop\Bootcamp_Proje\Guide_Project.API\bin\Debug\net6.0\FluentValidation.dll
 C:\Users\bayra\Desktop\Bootcamp_Proje\Guide_Project.API\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
 C:\Users\bayra\Desktop\Bootcamp_Proje\Guide_Project.API\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\bayra\Desktop\Bootcamp_Proje\Guide_Project.API\bin\Debug\net6.0\MassTransit.dll
+C:\Users\bayra\Desktop\Bootcamp_Proje\Guide_Project.API\bin\Debug\net6.0\MassTransit.Abstractions.dll
+C:\Users\bayra\Desktop\Bootcamp_Proje\Guide_Project.API\bin\Debug\net6.0\MassTransit.RabbitMqTransport.dll
+C:\Users\bayra\Desktop\Bootcamp_Proje\Guide_Project.API\bin\Debug\net6.0\RabbitMQ.Client.dll
+C:\Users\bayra\Desktop\Bootcamp_Proje\Guide_Project.API\bin\Debug\net6.0\System.Text.Json.dll

@@ -6,4 +6,5 @@ namespace Guide_Project.Core.Services;
 public interface ITokenService
 {
     Task<TokenDto> CreateToken(UserEntity userEntity);
+    string CreateRefreshToken();
 }

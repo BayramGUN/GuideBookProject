@@ -8,7 +8,6 @@ public class GenericRepository<TEntity> : IGenericRepository<TEntity>
     where TEntity : class
 {
     private readonly AppDbContext _context; 
-    //private readonly DbSet<TEntity> _context.Set<TEntity>();
 
     public GenericRepository(AppDbContext context)
     {
