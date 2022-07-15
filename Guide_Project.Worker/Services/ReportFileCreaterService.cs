@@ -66,7 +66,7 @@ public class ReportFileCreaterService
             throw new Exception(err.Message);
         }
     }
-    public Task Consumer_Recieved(object sender, BasicDeliverEventArgs @event)
+    public async Task Consumer_Recieved(object sender, BasicDeliverEventArgs @event)
     {
         try
         {
@@ -82,13 +82,31 @@ public class ReportFileCreaterService
 
             workBook.Worksheets.Add(dataSet);
             workBook.SaveAs(memeoryStream);
+            
+            MultipartFormDataContent dataContent = new();
 
+            dataContent.Add(
+                new ByteArrayContent
+                (
+                    memeoryStream.ToArray()),
+                    "file", Guid.NewGuid().ToString() + ".xlsx"
+                );
+
+            
+            var baseUrl = "https://localhost:7081";
+            using (var httpClient = new HttpClient())
+            {
+                var response = await httpClient.PostAsync($"{baseUrl}?fileId={reportExcelMessage.FileId}", dataContent);
+                if(response.IsSuccessStatusCode) 
+                    _channel.BasicAck(@event.DeliveryTag, false);
+            }
         }
         catch(Exception er)
         {
             throw new Exception(er.Message);
         }
-        return Task.CompletedTask;
+        await Task.CompletedTask;
+        return;
     }
 }
 

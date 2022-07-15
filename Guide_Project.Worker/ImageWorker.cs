@@ -34,6 +34,8 @@ public class ImageWorker : BackgroundService
         return Task.CompletedTask;
     }
 
+
+
     public override Task StopAsync(CancellationToken cancellationToken)
     {
         return base.StopAsync(cancellationToken);
