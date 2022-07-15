@@ -1,4 +1,4 @@
-using System.Net;
+/* using System.Net;
 using System.Net.Mail;
 using Guide_Project.Core.DTOs;
 using Guide_Project.Core.Models;
@@ -41,4 +41,4 @@ public class MailSendJob : IJob
         // If email is not received, use this URL to debug: https://app.sendgrid.com/email_activity 
         _logger.LogInformation(response.IsSuccessStatusCode ? "Email queued successfully!" : "Something went wrong!");
     }
-}
+} */
