@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\Guide_Project.API\\Guide_Project.API.csproj": {}
+    "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\Guide_Project.API\\Guide_Project.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\Guide_Project.API\\Guide_Project.API.csproj": {
+    "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\Guide_Project.API\\Guide_Project.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\Guide_Project.API\\Guide_Project.API.csproj",
+        "projectUniqueName": "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\Guide_Project.API\\Guide_Project.API.csproj",
         "projectName": "Guide_Project.API",
-        "projectPath": "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\Guide_Project.API\\Guide_Project.API.csproj",
+        "projectPath": "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\Guide_Project.API\\Guide_Project.API.csproj",
         "packagesPath": "C:\\Users\\bayra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\Guide_Project.API\\obj\\",
+        "outputPath": "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\Guide_Project.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bayra\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\Guide_Project.Service\\Guide_Project.Service.csproj": {
-                "projectPath": "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\Guide_Project.Service\\Guide_Project.Service.csproj"
+              "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\Guide_Project.Service\\Guide_Project.Service.csproj": {
+                "projectPath": "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\Guide_Project.Service\\Guide_Project.Service.csproj"
               }
             }
           }
@@ -81,14 +81,14 @@
         }
       }
     },
-    "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\Guide_Project.Core\\Guide_Project.Core.csproj": {
+    "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\Guide_Project.Core\\Guide_Project.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\Guide_Project.Core\\Guide_Project.Core.csproj",
+        "projectUniqueName": "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\Guide_Project.Core\\Guide_Project.Core.csproj",
         "projectName": "Guide_Project.Core",
-        "projectPath": "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\Guide_Project.Core\\Guide_Project.Core.csproj",
+        "projectPath": "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\Guide_Project.Core\\Guide_Project.Core.csproj",
         "packagesPath": "C:\\Users\\bayra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\Guide_Project.Core\\obj\\",
+        "outputPath": "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\Guide_Project.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bayra\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -105,8 +105,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\SharedLibrary\\SharedLibrary.csproj": {
-                "projectPath": "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\SharedLibrary\\SharedLibrary.csproj"
+              "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\SharedLibrary\\SharedLibrary.csproj": {
+                "projectPath": "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\SharedLibrary\\SharedLibrary.csproj"
               }
             }
           }
@@ -149,14 +149,14 @@
         }
       }
     },
-    "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\Guide_Project.Data\\Guide_Project.Data.csproj": {
+    "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\Guide_Project.Data\\Guide_Project.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\Guide_Project.Data\\Guide_Project.Data.csproj",
+        "projectUniqueName": "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\Guide_Project.Data\\Guide_Project.Data.csproj",
         "projectName": "Guide_Project.Data",
-        "projectPath": "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\Guide_Project.Data\\Guide_Project.Data.csproj",
+        "projectPath": "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\Guide_Project.Data\\Guide_Project.Data.csproj",
         "packagesPath": "C:\\Users\\bayra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\Guide_Project.Data\\obj\\",
+        "outputPath": "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\Guide_Project.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bayra\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -173,8 +173,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\Guide_Project.Core\\Guide_Project.Core.csproj": {
-                "projectPath": "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\Guide_Project.Core\\Guide_Project.Core.csproj"
+              "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\Guide_Project.Core\\Guide_Project.Core.csproj": {
+                "projectPath": "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\Guide_Project.Core\\Guide_Project.Core.csproj"
               }
             }
           }
@@ -233,14 +233,14 @@
         }
       }
     },
-    "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\Guide_Project.Service\\Guide_Project.Service.csproj": {
+    "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\Guide_Project.Service\\Guide_Project.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\Guide_Project.Service\\Guide_Project.Service.csproj",
+        "projectUniqueName": "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\Guide_Project.Service\\Guide_Project.Service.csproj",
         "projectName": "Guide_Project.Service",
-        "projectPath": "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\Guide_Project.Service\\Guide_Project.Service.csproj",
+        "projectPath": "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\Guide_Project.Service\\Guide_Project.Service.csproj",
         "packagesPath": "C:\\Users\\bayra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\Guide_Project.Service\\obj\\",
+        "outputPath": "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\Guide_Project.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bayra\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -257,8 +257,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\Guide_Project.Data\\Guide_Project.Data.csproj": {
-                "projectPath": "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\Guide_Project.Data\\Guide_Project.Data.csproj"
+              "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\Guide_Project.Data\\Guide_Project.Data.csproj": {
+                "projectPath": "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\Guide_Project.Data\\Guide_Project.Data.csproj"
               }
             }
           }
@@ -301,14 +301,14 @@
         }
       }
     },
-    "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\SharedLibrary\\SharedLibrary.csproj": {
+    "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\SharedLibrary\\SharedLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\SharedLibrary\\SharedLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\SharedLibrary\\SharedLibrary.csproj",
         "projectName": "SharedLibrary",
-        "projectPath": "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\SharedLibrary\\SharedLibrary.csproj",
+        "projectPath": "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\SharedLibrary\\SharedLibrary.csproj",
         "packagesPath": "C:\\Users\\bayra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\SharedLibrary\\obj\\",
+        "outputPath": "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\SharedLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bayra\\AppData\\Roaming\\NuGet\\NuGet.Config",

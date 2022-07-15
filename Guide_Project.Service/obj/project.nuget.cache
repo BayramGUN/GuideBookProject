@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "otc3e/6kwG4Ld6hp0bT8UWZe28gcFZWnwrGpCyn/Ur6OQwbNqXv76EgvZm48/KsnO7gzhHa0xQUVDt1sny+feQ==",
+  "dgSpecHash": "IofdzMEU7DqyY119mHW8HUJ4YUQ1AcUf/3bN+VYDdP8OsTCEAhplHKe1VWXnudE/8aK6QlNHu0uIn4utXfuylQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\Guide_Project.Service\\Guide_Project.Service.csproj",
+  "projectFilePath": "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\Guide_Project.Service\\Guide_Project.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bayra\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\bayra\\.nuget\\packages\\masstransit\\8.0.3\\masstransit.8.0.3.nupkg.sha512",

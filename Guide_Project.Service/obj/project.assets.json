@@ -6143,11 +6143,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\Guide_Project.Service\\Guide_Project.Service.csproj",
+      "projectUniqueName": "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\Guide_Project.Service\\Guide_Project.Service.csproj",
       "projectName": "Guide_Project.Service",
-      "projectPath": "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\Guide_Project.Service\\Guide_Project.Service.csproj",
+      "projectPath": "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\Guide_Project.Service\\Guide_Project.Service.csproj",
       "packagesPath": "C:\\Users\\bayra\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\Guide_Project.Service\\obj\\",
+      "outputPath": "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\Guide_Project.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\bayra\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6164,8 +6164,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\Guide_Project.Data\\Guide_Project.Data.csproj": {
-              "projectPath": "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\Guide_Project.Data\\Guide_Project.Data.csproj"
+            "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\Guide_Project.Data\\Guide_Project.Data.csproj": {
+              "projectPath": "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\Guide_Project.Data\\Guide_Project.Data.csproj"
             }
           }
         }

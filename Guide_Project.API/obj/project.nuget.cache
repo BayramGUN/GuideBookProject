@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Oiz/CGXnSnp4YU77ABKNSIs/tVxz1udFtLwr6LGqcX61KfXv7OHT9ho5lPFCSKbsCNePfE5LWaWx1AZHQRMnfw==",
+  "dgSpecHash": "QIAJxhXIVz2dYtII+SH1T3pwkyKOVBoyWzyMlQ4O0MZaH+JoMrDf/hb1GjK5FVUHJ7bqRwAF5CotmO2Wn691YA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\Guide_Project.API\\Guide_Project.API.csproj",
+  "projectFilePath": "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\Guide_Project.API\\Guide_Project.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bayra\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\bayra\\.nuget\\packages\\fluentvalidation\\11.0.3\\fluentvalidation.11.0.3.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HmCWDk6IZmPyoRzvRk6ERwR2hdimZnq+h+eIQG/eutBXYyIvuQ/gXl3eGescWeMDLsEeYPvbopxTwdUFDVjF5w==",
+  "dgSpecHash": "Agefcgq82sGSXZQrRa/XDZTHuLFAh7bj5EtwdMSjS5OhATc+8KumY0Y4GS/h+lVihdJOR9fwZtmDJqnQkGYc9A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\Guide_Project.Core\\Guide_Project.Core.csproj",
+  "projectFilePath": "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\Guide_Project.Core\\Guide_Project.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bayra\\.nuget\\packages\\masstransit\\8.0.3\\masstransit.8.0.3.nupkg.sha512",
     "C:\\Users\\bayra\\.nuget\\packages\\masstransit.abstractions\\8.0.3\\masstransit.abstractions.8.0.3.nupkg.sha512",

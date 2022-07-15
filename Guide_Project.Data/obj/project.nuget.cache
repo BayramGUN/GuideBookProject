@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Gfmi6xrKgKEAU0WstSa4AAz3ICYEZaLUUbNqp7dre77OEj02T+1i8XcKuf945cgDXMfhEVlIfIpdUYZCM3nFxw==",
+  "dgSpecHash": "OABX/4F+W62atVQTXFSr23ItuKLycNqcm8bD5FatOnKIyVUdYyXG1FB/ZXoU1mzzxs3OKfP2y3N4W5qg92fZHw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\Guide_Project.Data\\Guide_Project.Data.csproj",
+  "projectFilePath": "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\Guide_Project.Data\\Guide_Project.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bayra\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\bayra\\.nuget\\packages\\masstransit\\8.0.3\\masstransit.8.0.3.nupkg.sha512",

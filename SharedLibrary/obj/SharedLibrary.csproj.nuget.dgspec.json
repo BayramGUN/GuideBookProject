@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\SharedLibrary\\SharedLibrary.csproj": {}
+    "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\SharedLibrary\\SharedLibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\SharedLibrary\\SharedLibrary.csproj": {
+    "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\SharedLibrary\\SharedLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\SharedLibrary\\SharedLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\SharedLibrary\\SharedLibrary.csproj",
         "projectName": "SharedLibrary",
-        "projectPath": "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\SharedLibrary\\SharedLibrary.csproj",
+        "projectPath": "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\SharedLibrary\\SharedLibrary.csproj",
         "packagesPath": "C:\\Users\\bayra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bayra\\Desktop\\Bootcamp_Proje\\SharedLibrary\\obj\\",
+        "outputPath": "C:\\Users\\bayra\\Desktop\\of\\GuideBookProject\\SharedLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bayra\\AppData\\Roaming\\NuGet\\NuGet.Config",

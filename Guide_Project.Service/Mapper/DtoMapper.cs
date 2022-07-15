@@ -10,9 +10,9 @@ public class DtoMapper : Profile
     {
         CreateMap<UserDto, UserEntity>().ReverseMap();
         CreateMap<CustomerDto, Customer>().ReverseMap();
-        CreateMap<CommercialActivityDto, CommercialActivity>().ForMember(
+        CreateMap<CommercialActivity, CommercialActivityDto> ().ForMember(
                                             dest => dest.CustomerId, 
-                                            opt => opt.Ignore()
+                                            src => src.MapFrom(opt => opt.Customer.Id)
                                         );
     }
 }
