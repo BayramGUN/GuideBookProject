@@ -1,4 +1,4 @@
-﻿using Guide_Project.Core.Services;
+using Guide_Project.Core.Services;
 using Guide_Project.Service.Services;
 using Guide_Project.Worker.Services;
 using RabbitMQ.Client;
@@ -6,18 +6,18 @@ using RabbitMQ.Client.Events;
 
 namespace Guide_Project.Worker;
 
-public class ImageWorker : BackgroundService
+public class ReportWorker : BackgroundService
 {
-    private readonly ILogger<ImageWorker> _logger;
+    private readonly ILogger<ReportWorker> _logger;
     private readonly IRabbitMQService _rabbitMQService;
     private IModel _channel;
-    private readonly ImageWatermarkService _watermark;
-    private readonly WaterMarkMqService _watermarkMqService;
-    public ImageWorker(ILogger<ImageWorker> logger, ImageWatermarkService watermark, IRabbitMQService rabbitMQService)
+    private readonly ReportFileCreaterService _reportFile;
+    private readonly ReportFileMQService _reportFileMqService;
+    public ReportWorker(ILogger<ReportWorker> logger, ReportFileCreaterService reportFile, IRabbitMQService rabbitMQService)
     {
         _logger = logger;
         _rabbitMQService = rabbitMQService;
-        _watermark = watermark;
+        _reportFile = reportFile;
     }
     public override Task StartAsync(CancellationToken cancellationToken)
     {
@@ -29,8 +29,8 @@ public class ImageWorker : BackgroundService
     protected override Task ExecuteAsync(CancellationToken stoppingToken)
     {
         var consumer = new AsyncEventingBasicConsumer(_channel);
-        _channel.BasicConsume(_watermarkMqService.QueueName, false, consumer);
-        consumer.Received += _watermark.Consumer_Recieved;
+        _channel.BasicConsume(_reportFileMqService.QueueName, false, consumer);
+        consumer.Received += _reportFile.Consumer_Recieved;
         return Task.CompletedTask;
     }
 

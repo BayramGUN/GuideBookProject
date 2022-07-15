@@ -7,32 +7,33 @@ using RabbitMQ.Client;
 
 
 IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices((context, services) =>
+    .ConfigureServices((ctx, services) =>
     {
         services.AddDbContext<AppDbContext>(options =>
         {
-            options.UseNpgsql(context.Configuration.GetConnectionString("SqlCon"), action =>
+            options.UseNpgsql(ctx.Configuration.GetConnectionString("SqlCon"), action =>
             {
                 action.MigrationsAssembly("Guide_Project.Data");
             });
         });
         services.AddSingleton(sp => new ConnectionFactory() 
         { 
-            Uri = new Uri(context.Configuration.GetConnectionString("RabbitMQCon"))
+            Uri = new Uri(ctx.Configuration.GetConnectionString("RabbitMQCon"))
         });
         services.AddMassTransit(x =>
         { 
             x.UsingRabbitMq((context, cfg) =>
             {
                 cfg.Host("localhost", "/", h => {
-                    h.Username("guest");
-                    h.Password("guest");
+                    h.Username(ctx.Configuration["RabbitMQOptions:UserName"]);
+                    h.Password(ctx.Configuration["RabbitMQOptions:Password"]);
                 });
                 cfg.ConfigureEndpoints(context);
             });
         });
         services.AddScoped<ImageWatermarkService>();
         services.AddHostedService<ImageWorker>();
+        services.AddHostedService<ReportWorker>();
     })
     .Build();
 
