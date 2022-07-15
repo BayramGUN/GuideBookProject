@@ -3,24 +3,23 @@ using Microsoft.Extensions.Logging;
 using RabbitMQ.Client;
 
 namespace Guide_Project.Service.Services;
-
-public class WaterMarkMqService : IRabbitMQService
+//There is a problem because I did same jobs. It maybe Causing a violation of SOLID rules 
+public class ReportFileMQService : IRabbitMQService
 {
     private readonly ConnectionFactory _connectionFactory;
     private IConnection _connection;
     private IModel _channel;
-    private readonly ILogger<WaterMarkMqService> _logger;
+    private readonly ILogger<ReportFileMQService> _logger;
 
-    public static string ExchangeName = "ImageDirectExchange";
-    public static string Route = "watermark-route";
-    public string QueueName = "queue-image-watermarker";
-
-
-    public WaterMarkMqService(ConnectionFactory connectionFactory, ILogger<WaterMarkMqService> logger)
+    public static string ExchangeName = "ReportFileDirectExchange";
+    public static string ReporterRoute = "reportFile-route";
+    public string QueueName = "queue-excel-reporter";
+    public ReportFileMQService(ConnectionFactory connectionFactory, ILogger<ReportFileMQService> logger)
     {
         _connectionFactory = connectionFactory;
         _logger = logger;
     }
+
     public IModel Connect()
     {
         _connection = _connectionFactory.CreateConnection();
@@ -41,9 +40,9 @@ public class WaterMarkMqService : IRabbitMQService
         );
 
         _channel.QueueBind(
-            exchange:ExchangeName, 
-            queue:QueueName, 
-            routingKey: Route    
+            exchange: ExchangeName, 
+            queue: QueueName, 
+            routingKey: ReporterRoute    
         );
 
         _logger.LogInformation("Connected with RabbitMQ!");

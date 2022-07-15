@@ -13,6 +13,7 @@ public class AppDbContext : IdentityDbContext<UserEntity, RoleEntity, int>
     }
     public DbSet<Customer> Customers { get; set; }
     public DbSet<CommercialActivity> CommercialActivities { get; set; }
+    public DbSet<ReportFile> ReportFiles { get; set; }
     //public DbSet<RefreshToken> RefreshTokens { get; set; }
     /* protected override void OnModelCreating(ModelBuilder builder)
     {

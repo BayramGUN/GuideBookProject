@@ -73,6 +73,9 @@ builder.Services.AddSingleton(sp => new ConnectionFactory()
 builder.Services.AddSingleton<IRabbitMQService, WaterMarkMqService>();
 builder.Services.AddSingleton(typeof(IRabbitMQPublisher<>) ,typeof(WaterMarkMqPublisher<>));
     
+builder.Services.AddSingleton<IRabbitMQService, ReportFileMQService>();
+builder.Services.AddSingleton(typeof(IRabbitMQPublisher<>) ,typeof(ReportFileMQPublisher<>));
+    
             
             
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
