@@ -1,4 +1,4 @@
-/* using System.Net;
+using System.Net;
 using System.Net.Mail;
 using Guide_Project.Core.DTOs;
 using Guide_Project.Core.Models;
@@ -31,7 +31,7 @@ public class MailSendJob : IJob
         var baseUrl = "https://localhost:7081";
         var reportFile = new ReportFileDto();
         WebClient client = new WebClient();
-        msg.AddAttachment(reportFile.FileName, client.DownloadFileAsync(baseUrl + reportFile.FileName, reportFile.FileName)); 
+        //msg.AddAttachment(reportFile.FileName, client.DownloadFileAsync(baseUrl + reportFile.FileName, reportFile.FileName)); 
         msg.AddTo(new EmailAddress("[REPLACE WITH DESIRED TO EMAIL]", "[REPLACE WITH DESIRED TO NAME]"));
 
         var response = await _sendGridClient.SendEmailAsync(msg);
@@ -41,4 +41,4 @@ public class MailSendJob : IJob
         // If email is not received, use this URL to debug: https://app.sendgrid.com/email_activity 
         _logger.LogInformation(response.IsSuccessStatusCode ? "Email queued successfully!" : "Something went wrong!");
     }
-} */
+}
